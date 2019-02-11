@@ -1,0 +1,42 @@
+.photo{
+
+margin-left: 450px;
+margin-top: 20px;
+}
+input{
+  background-color: #FAFCFC;
+  border: none;
+  color: #0d0d0d;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  width: 40%;
+  border-bottom: 2px solid #719CEB;
+
+  justify-content: center;
+  margin-left: 210px;
+}
+.form{
+  display: inline-block;
+  flex-direction:column;
+  margin-left: 210px;
+  justify-content: center;
+
+}
+.btn1{
+  margin-left: 580px;
+  justify-content: center;
+  font-size: 16px;
+  width: 10%;
+  height: 40px;
+  background-color:#719CEB;
+  color: white;
+  margin-top:25px;
+  font-style: italic;
+font-weight: bold;
+}
+
+/* input[type=text]:placeholder {
+  color: #cccccc;
+} */
