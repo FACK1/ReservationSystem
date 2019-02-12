@@ -23,12 +23,12 @@ exports.login = (req, res) => {
         if (result2) {
           const { id, role } = result;
           const token = jwt.sign({ id, username, role }, SECRET);
-          return res.cookie('logged_in', token, { maxAge: 999999999 }).json({ token });
+          return res.cookie('logged_in', token, { maxAge: 999999999 }).json({ success: 'true', token });
         }
         return res.status(401).json({ error: 'password does not match' });
       });
     })
-    .catch(() => res.status(500).json({ error: 'error in query' }));
+    .catch(() => res.status(500).json({ error: 'error in server' }));
 };
 
 exports.logout = (req, res) => {

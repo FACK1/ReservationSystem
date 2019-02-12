@@ -8,21 +8,19 @@ class Login extends Component {
     input:''
   }
   handleChange=({target:{name,value}})=> {
-    console.log(name,value);
     this.setState({[name]: value})
   }
 
   handleClick =()=>{
-      const {history} = this.props;
+    const {history} = this.props;
     axios.post('/login',this.state)
     .then((data)=>{
-    history.push('/calendar');
+    history.push('/events');
     })
 
   }
   handleSubmitForm=(event)=>{
     event.preventDefault();
-    console.log('safffa');
   }
 
 

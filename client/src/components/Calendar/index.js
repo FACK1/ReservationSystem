@@ -2,8 +2,7 @@ import React, {Component} from 'react';
 import Calendar from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import moment from "moment";
-import axios from 'axios'
-
+import axios from 'axios';
 
 class BigCalendar extends Component {
 
@@ -14,22 +13,27 @@ class BigCalendar extends Component {
      axios.get('/events')
      .then((data)=>{
        const result =data.data;
-       console.log('result',result);
        const events = result.map((event)=>{
-         return {title: event.title,
-         end: new Date(event.end_date),
-       start: new Date(event.end_date),
-           status: event.status}
+        return { id: event.id,
+         title: event.title,
+         start: new Date(event.start_date),
+         end: new Date (event.end_date),
+         status: event.status,
+         price: event.price,
+         capacity: event.capacity,
+         note: event.note,
+         orgName: event.org_name,
+         userId : event.eventId}
        })
        this.setState({
          events,
          loading:true
        })
      }).catch((error)=>{
-       console.log({error});
+       const {history}= this.props;
+       history.push('/error');
      })
    }
-
 
   click=()=>{
       const {history}= this.props;
@@ -41,11 +45,9 @@ class BigCalendar extends Component {
       history.push('/detailsevent');
     }
 
-
     render() {
       const localizer = Calendar.momentLocalizer(moment);
       const{events,loading} = this.state;
-      console.log('events',events);
       if(!loading){
         return <h1>loading </h1>
         }
