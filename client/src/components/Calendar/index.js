@@ -25,13 +25,15 @@ class BigCalendar extends Component {
          orgName: event.org_name,
          userId : event.eventId}
        })
+       console.log('events',events);
        this.setState({
          events,
          loading:true
        })
      }).catch((error)=>{
        const {history}= this.props;
-       history.push('/error');
+       console.log('errrrrrror',error);
+       // history.push('/error');
      })
    }
 

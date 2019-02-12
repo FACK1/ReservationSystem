@@ -14,9 +14,9 @@ exports.auth = (req, res, next) => {
       const { id, role } = decoded;
       if (role === 'admin' || role === 'user') {
         req.user_id = id;
-        next();
+        return next();
       }
-      return res.json({ error: 'not auth' });
+      return res.json({ error: 'not Authorized' });
     });
   }
 };
