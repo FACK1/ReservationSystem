@@ -15,8 +15,14 @@ class BigCalendar extends Component {
      .then((data)=>{
        const result =data.data;
        console.log('result',result);
+       const events = result.map((event)=>{
+         return {title: event.title,
+         end: new Date(event.end_date),
+       start: new Date(event.end_date),
+           status: event.status}
+       })
        this.setState({
-         events: result,
+         events,
          loading:true
        })
      }).catch((error)=>{
@@ -49,7 +55,7 @@ class BigCalendar extends Component {
             selectable
             localizer={localizer}
             defaultDate={new Date()}
-            defaultView= {Calendar.Views.MONTH, Calendar.Views.WEEK, Calendar.Views.DAY, Calendar.Views.AGENDA}
+            defaultView= {'week'}
             events={events}
             style={{ height: "100vh" }}
             onSelectEvent={this.show}

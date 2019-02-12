@@ -16,7 +16,7 @@ class Login extends Component {
       const {history} = this.props;
     axios.post('/login',this.state)
     .then((data)=>{
-    history.push('/hall');
+    history.push('/calendar');
     })
 
   }
