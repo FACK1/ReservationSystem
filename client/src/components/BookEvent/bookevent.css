@@ -1,0 +1,171 @@
+body{
+  background-color: #F7F2F2;
+}
+.BookEvent{
+  width: 75%;
+  float: right;
+  margin: 150px 10px 10px 50px;
+  background-color: white;
+}
+.container{
+  display: flex;
+  border-radius: 5px;
+  margin-top: -130px;
+  background-color: white;
+}
+.column1{
+  flex-direction:column;
+  width: 50%;
+  background-color: white;
+}
+.column2{
+  flex-direction:column;
+  width: 50%;
+  margin-top: 68px;
+  background-color: white;
+}
+.h2{
+  margin-left: 10px;
+}
+.label{
+  display: block;
+  padding-top: 10px;
+  margin-left: 12px;
+}
+.input{
+  background-color: #FAFCFC;
+  border: none;
+  color: #0d0d0d;
+  width: 80%;
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom: 2px solid #719CEB;
+  margin: 10px 0px 10px 12px;
+  padding: 5px 0px 5px 2px;
+}
+.note{
+  background-color: #FAFCFC;
+  border: none;
+  color: #0d0d0d;
+  width: 80%;
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom: 2px solid #719CEB;
+  margin: 10px 0px 10px 12px;
+  padding: 10px 0 90px 2px;
+}
+.bookdates{
+  background-color: #FAFCFC;
+  border: none;
+  color: #0d0d0d;
+  width: 80%;
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom: 2px solid #719CEB;
+  margin: 10px 0px 10px 12px;
+  padding: 5px 0px 5px 2px;
+}
+
+.lunchcost{
+  background-color: #FAFCFC;
+  border: none;
+  color: #0d0d0d;
+  width: 80%;
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom: 2px solid #719CEB;
+  margin: 218px 0 10px 12px;
+  padding: 5px 0px 5px 2px;
+}
+.lunchdate{
+  background-color: #FAFCFC;
+  border: none;
+  color: #0d0d0d;
+  width: 80%;
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom: 2px solid #719CEB;
+  margin: 48px 0 10px 12px;
+  padding: 5px 0px 5px 2px;
+}
+
+.coffee{
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.coffeecost{
+  background-color: #FAFCFC;
+  border: none;
+  color: #0d0d0d;
+  width: 80%;
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom: 2px solid #719CEB;
+  margin: 78px 0 10px 12px;
+  padding: 5px 0px 5px 2px;
+}
+.coffeedate{
+  background-color: #FAFCFC;
+  border: none;
+  color: #0d0d0d;
+  width: 80%;
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom: 2px solid #719CEB;
+  margin: 48px 0 10px 12px;
+  padding: 5px 0px 5px 2px;
+}
+
+.equipment{
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.equipmentcost{
+  background-color: #FAFCFC;
+  border: none;
+  color: #0d0d0d;
+  width: 80%;
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom: 2px solid #719CEB;
+  margin: 87px 0 10px 12px;
+  padding: 5px 0px 5px 2px;
+}
+
+.totalcost{
+  margin-top: 85px;
+  font-size: 1.05em;
+}
+
+.submitBtn{
+  background-color: #A9C3F3;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  height: 40px;
+  margin-right: 40px;
+  margin-top: 80px;
+  width: 100px;
+}
+
+.submitBtn:hover {
+  background-color: #719CEB;
+}
+.total{
+display: flex;
+flex-direction: row;
+}
+.both{
+  display: flex;
+}
