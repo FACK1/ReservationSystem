@@ -7,7 +7,6 @@ import Calendar from "./components/Calendar";
 import BookEvent from "./components/BookEvent";
 import DetailsEvent from "./components/DetailsEvent";
 import Error from "./components/Error";
-import Hall from "./components/Hall";
 
 class App extends Component {
   render() {
@@ -15,7 +14,7 @@ class App extends Component {
       <Router>
         <React.Fragment>
           <Route exact path="/" component={Login} />
-          <Route exact path="/events" component={Hall} />
+          <Route exact path="/events" component={Calendar} />
           <Route exact path="/bookevent" component={BookEvent} />
           <Route exact path="/detailsevent" component={DetailsEvent} />
           <Route exact path="/error" component={Error} />

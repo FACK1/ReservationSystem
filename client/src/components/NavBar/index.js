@@ -4,10 +4,8 @@ import logo from "./logo.png";
 
 const NavBar = () => (
   <div className="nav-bar1">
-    <img src={logo} alt="logo" width="6%" height="40px" />
-    <a href="url" className="link">
-      logout
-    </a>
+    <img className="logo" src={logo} alt="logo" />
+    <button className="logout-btn">log out</button>
   </div>
 );
 export default NavBar;
