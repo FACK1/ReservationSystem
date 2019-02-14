@@ -9,6 +9,7 @@
     "globalize": "^1.4.0",
     "react": "^16.8.1",
     "react-big-calendar": "^0.20.3",
+    "react-datepicker": "^2.1.0",
     "react-dom": "^16.8.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "^2.1.3"
