@@ -1,6 +1,9 @@
 import React from 'react';
 import NavBar from "../NavBar";
 import SideBar from "../SideBar";
+import DatePicker from "react-datepicker";
+
+import "react-datepicker/dist/react-datepicker.css";
 import './bookevent.css';
 
 class BookEvent extends React.Component {
@@ -23,10 +26,11 @@ class BookEvent extends React.Component {
                   placeholder="Event Name:"
                 />
                 <label className="label">Start Date:</label>
-                <input className="bookdates"
-                  type="date"
-                  name="startdate"
+                <DatePicker
+                  className="bookdates"
+                  selected={new Date()}
                 />
+
                 <input className="note"
                   type="text"
                   name="note"
@@ -71,10 +75,11 @@ class BookEvent extends React.Component {
 
             />
             <label className="label">End Date:</label>
-            <input className="bookdates"
-              type="date"
-              name="enddate"
+            <DatePicker
+              className="bookdates"
+              selected={new Date()}
             />
+
             <input className="input"
               type="Number"
               name="price"
@@ -88,9 +93,9 @@ class BookEvent extends React.Component {
 
             />
 
-            <input className="lunchdate"
+            <input className="lunchtime"
               type="text"
-              name="lunchtime"
+              name="time"
               placeholder="Time:"
             />
 
@@ -102,9 +107,9 @@ class BookEvent extends React.Component {
             />
 
 
-            <input className="coffeedate"
+            <input className="coffeetime"
               type="text"
-              name="coffeetime"
+              name="time"
               placeholder="Time:"
             />
             <input className="equipmentcost"

@@ -1,28 +1,32 @@
 body{
   background-color: #F7F2F2;
 }
+.both{
+  display: flex;
+}
 .BookEvent{
-  width: 75%;
+  width: 66%;
   float: right;
-  margin: 150px 10px 10px 50px;
-  background-color: white;
+  margin: 150px 10px 60px 50px;
+
 }
 .container{
   display: flex;
   border-radius: 5px;
   margin-top: -130px;
+  margin-right: 25px;
   background-color: white;
+  box-shadow: 5px 10px 5px grey;
 }
 .column1{
   flex-direction:column;
   width: 50%;
-  background-color: white;
+  margin-left: 46px;
 }
 .column2{
   flex-direction:column;
   width: 50%;
   margin-top: 68px;
-  background-color: white;
 }
 .h2{
   margin-left: 10px;
@@ -31,6 +35,42 @@ body{
   display: block;
   padding-top: 10px;
   margin-left: 12px;
+}
+
+.input::placeholder {
+  color: black;
+  font-size: 1.2em;
+  font-style: italic;
+}
+.note::placeholder {
+  color: black;
+  font-size: 1.2em;
+  font-style: italic;
+}
+.coffeecost::placeholder {
+  color: black;
+  font-size: 1.2em;
+  font-style: italic;
+}
+.lunchcost::placeholder {
+  color: black;
+  font-size: 1.2em;
+  font-style: italic;
+}
+.equipmentcost::placeholder {
+  color: black;
+  font-size: 1.2em;
+  font-style: italic;
+}
+.lunchtime::placeholder {
+  color: black;
+  font-size: 1.2em;
+  font-style: italic;
+}
+.coffeetime::placeholder {
+  color: black;
+  font-size: 1.2em;
+  font-style: italic;
 }
 .input{
   background-color: #FAFCFC;
@@ -66,7 +106,7 @@ body{
   font-size: 16px;
   border-bottom: 2px solid #719CEB;
   margin: 10px 0px 10px 12px;
-  padding: 5px 0px 5px 2px;
+  padding: 5px 76px 5px 2px;
 }
 
 .lunchcost{
@@ -78,10 +118,10 @@ body{
   text-decoration: none;
   font-size: 16px;
   border-bottom: 2px solid #719CEB;
-  margin: 218px 0 10px 12px;
+  margin: 222px 0 10px 12px;
   padding: 5px 0px 5px 2px;
 }
-.lunchdate{
+.lunchtime{
   background-color: #FAFCFC;
   border: none;
   color: #0d0d0d;
@@ -110,7 +150,7 @@ body{
   margin: 78px 0 10px 12px;
   padding: 5px 0px 5px 2px;
 }
-.coffeedate{
+.coffeetime{
   background-color: #FAFCFC;
   border: none;
   color: #0d0d0d;
@@ -142,9 +182,7 @@ body{
 
 .totalcost{
   margin-top: 85px;
-  font-size: 1.05em;
 }
-
 .submitBtn{
   background-color: #A9C3F3;
   color: white;
@@ -154,18 +192,14 @@ body{
   cursor: pointer;
   float: right;
   height: 40px;
-  margin-right: 40px;
+  margin-left: 140px;
   margin-top: 80px;
   width: 100px;
 }
-
 .submitBtn:hover {
   background-color: #719CEB;
 }
 .total{
-display: flex;
-flex-direction: row;
-}
-.both{
   display: flex;
+  flex-direction: row;
 }
