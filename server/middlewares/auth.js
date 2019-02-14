@@ -13,7 +13,7 @@ exports.auth = (req, res, next) => {
 
       const { id, role } = decoded;
       if (role === 'admin' || role === 'user') {
-        req.user_id = id;
+        req.userId = id;
         return next();
       }
       return res.json({ error: 'not Authorized' });
