@@ -2,27 +2,32 @@
   margin-top: 10px;
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 95%;
   height: 3rem;
   background-color: white;
   background: rgba(255, 255, 255, 0.5);
-  border-radius: 7px;
   display: flex;
   justify-content: space-between;
 }
 .logout-btn {
-  margin-right: 100px;
+  margin-right: 40px;
   background-color: transparent;
-  border: none;
   align-self: center;
-  border-left: 2px solid white;
-  font-size: 12px;
-  font-weight: bold;
+  border: none;
+  border-left: 2px ridge #c4c1;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
 }
 
 .logo {
-  width: 60px;
-  height: 40px;
-  margin-left: 40px;
+  width: 48.74px;
+  height: 41px;
   margin-top: 3px;
+  margin-left: 40px;
+}
+.nav-outer {
+  display: flex;
+  justify-content: center;
 }
