@@ -18,7 +18,7 @@ exports.postEvent = (req, res) => {
     lunch_note,
     lunch_price,
     lunch_time,
-    equibment_price,
+    equipment_price,
     equipment_note,
   } = req.body;
 
@@ -47,7 +47,7 @@ exports.postEvent = (req, res) => {
       eventId: result.dataValues.eventId,
     }))
     .then(result => Equipment.create({
-      price: equibment_price,
+      price: equipment_price,
       note: equipment_note,
       eventId: result.dataValues.eventId,
     }))
