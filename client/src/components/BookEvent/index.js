@@ -7,10 +7,13 @@ import "./bookevent.css";
 import axios from "axios";
 
 class BookEvent extends React.Component {
+  constructor(props){
+    super(props);
+  }
   state = {
     input: "",
-    start_date: new Date(),
-    end_date: new Date()
+    start_date: this.props.history.location.state.start,
+    end_date: this.props.history.location.state.end
   };
 
   handleChange = ({ target: { name, value } }) => {
@@ -38,6 +41,7 @@ class BookEvent extends React.Component {
   };
 
   render() {
+      console.log('state',this.props);
     return (
       <div className="page">
         <div>
@@ -64,6 +68,7 @@ class BookEvent extends React.Component {
                     className="bookdates"
                     selected={this.state.start_date}
                     onChange={this.handleChangeStartDate}
+                    showTimeSelect
                     name="start_date"
                   />
 
@@ -128,6 +133,10 @@ class BookEvent extends React.Component {
                   <DatePicker
                     className="bookdates"
                     selected={this.state.end_date}
+                    showTimeSelect
+                     timeFormat="HH:mm"
+                    dateFormat="MMMM d, yyyy h:mm aa"
+                    timeCaption="time"
                     onChange={this.handleChangeEndDate}
                   />
 
