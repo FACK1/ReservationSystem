@@ -38,40 +38,34 @@ body{
 }
 
 .input::placeholder {
-  color: black;
   font-size: 1.2em;
   font-style: italic;
 }
 .note::placeholder {
-  color: black;
   font-size: 1.2em;
   font-style: italic;
 }
 .coffeecost::placeholder {
-  color: black;
   font-size: 1.2em;
   font-style: italic;
 }
 .lunchcost::placeholder {
-  color: black;
   font-size: 1.2em;
   font-style: italic;
 }
 .equipmentcost::placeholder {
-  color: black;
   font-size: 1.2em;
   font-style: italic;
 }
 .lunchtime::placeholder {
-  color: black;
   font-size: 1.2em;
   font-style: italic;
 }
 .coffeetime::placeholder {
-  color: black;
   font-size: 1.2em;
   font-style: italic;
 }
+
 .input{
   background-color: #FAFCFC;
   border: none;
