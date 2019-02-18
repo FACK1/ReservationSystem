@@ -41,12 +41,12 @@ class BigCalendar extends Component {
       });
   }
 
-  click = (slot) => {
+  click = (event) => {
     const { history } = this.props;
-    this.props.history.push({
-  pathname: '/bookevent',
-  state: slot
-})
+    history.push({
+    pathname:"/bookevent",
+    event
+  });
   };
 
   show = (event) => {

@@ -13,7 +13,7 @@ insert into events (title,start_date,end_date,org_name,price,capacity,note,"user
     values ('Datashow',20,1)
 
 insert into events (title,start_date,end_date,org_name,price,capacity,note,"userId",status)
-  values ('Meeting',DATE 'Mon, 11 February 2019 13:30:00', DATE 'Mon, 11 February 2019 13:30:00','PPU',50,5,'The event is for the interview',1,1);
+  values ('Meeting',DATE 'Mon, 11 February 2019 13:30:00', DATE 'Mon, 11 February 2019 13:30:00','PPU',50,5,'The event is for the interview',2,1);
   insert into lunches (note,price,time,"eventId")
     values ('Kabsa',30,'12:30',2)
   insert into coffees (note,price,time,"eventId")
