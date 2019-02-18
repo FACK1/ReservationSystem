@@ -12,5 +12,5 @@ router.get('/events', auth, getEvents);
 router.post('/login', login);
 router.get('/logout', logout);
 router.post('/event', auth, postEvent);
-router.get('/event/:id', auth, getEvent);
+router.get('/event/:id', getEvent);
 module.exports = router;
