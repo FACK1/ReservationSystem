@@ -10,7 +10,6 @@ exports.auth = (req, res, next) => {
       if (err) {
         return res.status(401).json({ error: 'something went wrong!' });
       }
-
       const { id, role } = decoded;
       if (role === 'admin' || role === 'user') {
         req.userId = id;

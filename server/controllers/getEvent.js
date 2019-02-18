@@ -7,30 +7,18 @@ exports.getEvent = ((req, res, next) => {
   Event.findOne(
     { where: { id }, raw: true },
   ).then((event) => {
-    if (!event) {
-      return res.status(401)
-        .json({ message: 'no event exists' });
-    }
     Coffee.findOne(
       { where: { eventId: id }, raw: true },
     ).then((coffee) => {
-      if (!coffee) {
-        return res.status(401)
-          .json({ message: 'no coffee exists' });
-      }
       Lunch.findOne(
         { where: { eventId: id }, raw: true },
       ).then((lunch) => {
-        if (!lunch) {
-          return res.status(401)
-            .json({ message: 'no lunch exists' });
-        }
         Equipment.findOne(
           { where: { eventId: id }, raw: true },
         ).then((equipment) => {
-          if (!equipment) {
+          if (!event) {
             return res.status(401)
-              .json({ message: 'no equipment exists' });
+              .json({ message: 'no event exists' });
           }
           return res.json({
             event, coffee, lunch, equipment,

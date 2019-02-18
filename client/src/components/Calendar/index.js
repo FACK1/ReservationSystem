@@ -46,7 +46,7 @@ class BigCalendar extends Component {
     history.push({ pathname: "/bookevent", event });
   };
 
-  showDetailsForm = event => {
+  detailsEvent = event => {
     const { history } = this.props;
     history.push({ pathname: "/detailsevent", event });
   };
@@ -72,7 +72,7 @@ class BigCalendar extends Component {
               defaultView={"week"}
               events={events}
               style={{ height: "100vh" }}
-              onSelectEvent={this.showDetailsForm}
+              onSelectEvent={this.detailsEvent}
               onSelectSlot={this.bookEvent}
             />
           </div>
