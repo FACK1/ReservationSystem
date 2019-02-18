@@ -51,7 +51,7 @@ class BigCalendar extends Component {
     history.push({ pathname: "/detailsevent", event });
   };
 
-  pendingEventStyle = (event, start, end, isSelected) => {
+  pendingEventStyle = (event) => {
     if (event.status === 0) {
       const style = { backgroundColor: "#D4AC0D" };
       return { style: style };
