@@ -41,17 +41,14 @@ class BigCalendar extends Component {
       });
   }
 
-  click = (event) => {
+  bookEvent = event => {
     const { history } = this.props;
-    history.push({
-    pathname:"/bookevent",
-    event
-  });
+    history.push({ pathname: "/bookevent", event });
   };
 
-  show = (event) => {
+  showDetailsForm = event => {
     const { history } = this.props;
-    history.push({pathname:"/detailsevent",event});
+    history.push({ pathname: "/detailsevent", event });
   };
 
   render() {
@@ -75,8 +72,8 @@ class BigCalendar extends Component {
               defaultView={"week"}
               events={events}
               style={{ height: "100vh" }}
-              onSelectEvent={this.show}
-              onSelectSlot={this.click}
+              onSelectEvent={this.showDetailsForm}
+              onSelectSlot={this.bookEvent}
             />
           </div>
         </div>
