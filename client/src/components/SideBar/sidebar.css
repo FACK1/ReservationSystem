@@ -26,7 +26,7 @@
 }
 
 .blue,
-.light-blue {
+.yellow {
   width: 10px;
   height: 10px;
   background: #c4c4c4;
@@ -39,11 +39,11 @@
   margin-top: 20px;
 }
 .blue {
-  background: #719ceb;
+  background: #3174ad;
 }
 
-.light-blue {
-  background: #65c6c4;
+.yellow {
+  background: #d4ac0d;
 }
 .agenda-prop {
   font-size: 12px;

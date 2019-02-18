@@ -16,7 +16,7 @@ const SideBar = () => (
           <p className="agenda-prop">approved</p>
         </div>
         <div className="color-typing">
-          <div className="light-blue" />
+          <div className="yellow" />
           <p className="agenda-prop">pending</p>
         </div>
       </div>
