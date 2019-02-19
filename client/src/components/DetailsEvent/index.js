@@ -94,7 +94,7 @@ class DetailsEvent extends Component {
       return (
         <div className="page">
           <div>
-            <NavBar />
+            <NavBar {...this.props} />
           </div>
           <div className="both">
             <SideBar />

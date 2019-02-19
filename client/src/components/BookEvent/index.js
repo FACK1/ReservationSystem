@@ -42,7 +42,7 @@ class BookEvent extends React.Component {
     return (
       <div className="page">
         <div>
-          <NavBar />
+          <NavBar {...this.props} />
         </div>
         <div className="both">
           <SideBar />
