@@ -15,12 +15,13 @@ class DetailsEvent extends Component {
     const id = this.props.history.location.event.id;
     axios
       .get(`/event/${id}`)
-      .then(data => {
+      .then(({ data }) => {
         this.setState({
-          event_details: data.data.event,
-          coffee_details: data.data.coffee,
-          lunch_details: data.data.lunch,
-          equipment_details: data.data.equipment,
+          role: data.userRole,
+          event_details: data.event,
+          coffee_details: data.coffee,
+          lunch_details: data.lunch,
+          equipment_details: data.equipment,
           loading: true
         });
       })
@@ -93,6 +94,11 @@ class DetailsEvent extends Component {
         end_ddmmyyyy.getMonth() +
         "-" +
         end_ddmmyyyy.getFullYear();
+
+      let statusApprove = false;
+      let statusBoolean = this.state.status ? true : false;
+      this.role = "admin" ? (statusApprove = true) : (statusApprove = false);
+
       return (
         <div className="page">
           <div>
@@ -167,9 +173,11 @@ class DetailsEvent extends Component {
                   <label className="title">price:</label>
                   <label className="answer">{equipment_price}</label>
                 </div>
-                {this.state.status && <input type="submit" value="OK" />}
-                {!this.state.status && <input type="submit" value="Approve" />}
-                {!this.state.status && (
+                {statusBoolean && <input type="submit" value="Close" />}
+                {!statusBoolean && statusApprove && (
+                  <input type="submit" value="Approve" />
+                )}
+                {!statusBoolean && statusApprove && (
                   <input type="button" value="Cancel" onClick={this.cancel} />
                 )}
               </form>
