@@ -5,7 +5,6 @@ import BackCursor from "../BackCursor";
 import axios from "axios";
 import "./detailsevent.css";
 
-
 class DetailsEvent extends Component {
   state = {
     status: this.props.history.location.event.status,
@@ -167,13 +166,25 @@ class DetailsEvent extends Component {
                   <label className="title">Price:</label>
                   <label className="answer">{equipment_price}</label>
                 </div>
+
+                <div className="labels_container">
+                  <label className="title">Description:</label>
+                  <label className="answer">{equipment_note}</label>
+                </div>
                 {statusBoolean && <input type="submit" value="Close" />}
-                {!statusBoolean && statusApprove && (
-                  <input type="submit" value="Approve" />
-                )}
-                {!statusBoolean && statusApprove && (
-                  <input type="button" value="Cancel" onClick={this.cancel} />
-                )}
+                <div className="button">
+                  {!statusBoolean && statusApprove && (
+                    <input type="submit" value="Approve" className="Approve" />
+                  )}
+                  {!statusBoolean && statusApprove && (
+                    <input
+                      type="button"
+                      value="Cancel"
+                      className="Cancel"
+                      onClick={this.cancel}
+                    />
+                  )}
+                </div>
               </form>
             </div>
           </div>
