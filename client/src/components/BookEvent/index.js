@@ -1,10 +1,12 @@
 import React from "react";
 import NavBar from "../NavBar";
 import SideBar from "../SideBar";
+import BackCursor from "../BackCursor";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "./bookevent.css";
 import axios from "axios";
+
 
 class BookEvent extends React.Component {
   constructor(props){
@@ -46,6 +48,7 @@ class BookEvent extends React.Component {
         </div>
         <div className="both">
           <SideBar />
+          <BackCursor />
           <div className="BookEvent">
             <form onSubmit={this.handleSubmitForm}>
               <div className="container">

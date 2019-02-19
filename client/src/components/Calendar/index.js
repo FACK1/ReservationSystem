@@ -7,6 +7,7 @@ import "./calendar.css";
 import moment from "moment";
 import axios from "axios";
 
+
 class BigCalendar extends Component {
   state = {
     loading: false
@@ -51,7 +52,7 @@ class BigCalendar extends Component {
     history.push({ pathname: "/detailsevent", event });
   };
 
-  pendingEventStyle = (event) => {
+  pendingEventStyle = event => {
     if (event.status === 0) {
       const style = { backgroundColor: "#D4AC0D" };
       return { style: style };
@@ -77,6 +78,7 @@ class BigCalendar extends Component {
               localizer={localizer}
               defaultDate={new Date()}
               defaultView={"week"}
+              views={['week','day']}
               events={events}
               style={{ height: "100vh" }}
               onSelectEvent={this.detailsEvent}

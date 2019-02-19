@@ -3,6 +3,7 @@ body {
 }
 .calendar-container {
   margin-top: 70px;
+  margin-bottom: 70px;
   width: 100%;
   padding-right: 50px;
   padding-left: 30px;

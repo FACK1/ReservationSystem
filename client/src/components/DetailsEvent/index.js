@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import NavBar from "../NavBar";
 import SideBar from "../SideBar";
+import BackCursor from "../BackCursor";
 import axios from "axios";
+
 
 class DetailsEvent extends Component {
   state = {
@@ -98,6 +100,7 @@ class DetailsEvent extends Component {
           </div>
           <div className="both">
             <SideBar />
+            <BackCursor />
             <div className="detailsEvent">
               <form onSubmit={this.handleSubmitForm}>
                 <h2 className="h2">General</h2>
