@@ -13,7 +13,6 @@ function handleSubmit(props){
       history.push("/");
     })
     .catch(error => {
-      const { history } = this.props;
       history.push("/error");
     });
 };

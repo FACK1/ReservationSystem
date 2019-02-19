@@ -178,7 +178,7 @@ body{
   margin-top: 85px;
 }
 .submitBtn{
-  background-color: #A9C3F3;
+  background-color: #719CEB;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -189,9 +189,6 @@ body{
   margin-left: 140px;
   margin-top: 80px;
   width: 100px;
-}
-.submitBtn:hover {
-  background-color: #719CEB;
 }
 .total{
   display: flex;
