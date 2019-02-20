@@ -1,16 +1,15 @@
-body{
-  background-color: #F7F2F2;
+body {
+  background-color: #f7f2f2;
 }
-.both{
+.both {
   display: flex;
 }
-.BookEvent{
+.BookEvent {
   width: 66%;
   float: right;
   margin: 150px 10px 60px 50px;
-
 }
-.container{
+.container {
   display: flex;
   border-radius: 5px;
   margin-top: -130px;
@@ -18,22 +17,22 @@ body{
   background-color: white;
   box-shadow: 5px 10px 5px grey;
 }
-.column1{
-  flex-direction:column;
+.column1 {
+  flex-direction: column;
   width: 50%;
   margin-left: 46px;
   margin-bottom: 20px;
 }
-.column2{
-  flex-direction:column;
+.column2 {
+  flex-direction: column;
   width: 50%;
   margin-top: 68px;
   margin-bottom: 20px;
 }
-.h2{
+.h2 {
   margin-left: 10px;
 }
-.label{
+.label {
   display: block;
   padding-top: 10px;
   margin-left: 12px;
@@ -68,117 +67,121 @@ body{
   font-style: italic;
 }
 
-.input{
-  background-color: #FAFCFC;
+.input {
+  background-color: #fafcfc;
   border: none;
   color: #0d0d0d;
   width: 80%;
   text-align: left;
   text-decoration: none;
   font-size: 16px;
-  border-bottom: 2px solid #719CEB;
+  border-bottom: 2px solid #719ceb;
   margin: 10px 0px 10px 12px;
   padding: 5px 0px 5px 2px;
 }
-.note{
-  background-color: #FAFCFC;
+.note {
+  background-color: #fafcfc;
   border: none;
   color: #0d0d0d;
   width: 80%;
   text-align: left;
   text-decoration: none;
   font-size: 16px;
-  border-bottom: 2px solid #719CEB;
+  border-bottom: 2px solid #719ceb;
   margin: 10px 0px 10px 12px;
   padding: 10px 0 90px 2px;
 }
-.bookdates{
-  background-color: #FAFCFC;
+.bookdates {
+  background-color: #fafcfc;
   border: none;
   color: #0d0d0d;
   width: 80%;
   text-align: left;
   text-decoration: none;
   font-size: 16px;
-  border-bottom: 2px solid #719CEB;
+  border-bottom: 2px solid #719ceb;
   margin: 10px 0px 10px 12px;
   padding: 5px 76px 5px 2px;
 }
 
-.lunchcost{
-  background-color: #FAFCFC;
+.lunchcost {
+  background-color: #fafcfc;
   border: none;
   color: #0d0d0d;
   width: 80%;
   text-align: left;
   text-decoration: none;
   font-size: 16px;
-  border-bottom: 2px solid #719CEB;
+  border-bottom: 2px solid #719ceb;
   margin: 222px 0 10px 12px;
   padding: 5px 0px 5px 2px;
 }
-.lunchtime{
-  background-color: #FAFCFC;
+.lunchtime {
+  background-color: #fafcfc;
   border: none;
   color: #0d0d0d;
   width: 80%;
   text-align: left;
   text-decoration: none;
   font-size: 16px;
-  border-bottom: 2px solid #719CEB;
+  border-bottom: 2px solid #719ceb;
   margin: 48px 0 10px 12px;
   padding: 5px 0px 5px 2px;
 }
 
-.coffee{
+.coffee {
   margin-top: 20px;
   margin-left: 10px;
 }
-.coffeecost{
-  background-color: #FAFCFC;
+.coffeecost {
+  background-color: #fafcfc;
   border: none;
   color: #0d0d0d;
   width: 80%;
   text-align: left;
   text-decoration: none;
   font-size: 16px;
-  border-bottom: 2px solid #719CEB;
+  border-bottom: 2px solid #719ceb;
   margin: 78px 0 10px 12px;
   padding: 5px 0px 5px 2px;
 }
-.coffeetime{
-  background-color: #FAFCFC;
+.coffeetime {
+  background-color: #fafcfc;
   border: none;
   color: #0d0d0d;
   width: 80%;
   text-align: left;
   text-decoration: none;
   font-size: 16px;
-  border-bottom: 2px solid #719CEB;
+  border-bottom: 2px solid #719ceb;
   margin: 48px 0 10px 12px;
   padding: 5px 0px 5px 2px;
 }
 
-.equipment{
+.equipment {
   margin-top: 30px;
   margin-left: 10px;
   margin-bottom: 25px;
 }
-.equipmentcost{
-  background-color: #FAFCFC;
+.equipmentcost {
+  background-color: #fafcfc;
   border: none;
   color: #0d0d0d;
   width: 80%;
   text-align: left;
   text-decoration: none;
   font-size: 16px;
-  border-bottom: 2px solid #719CEB;
+  border-bottom: 2px solid #719ceb;
   margin: 87px 0 10px 12px;
   padding: 5px 0px 5px 2px;
 }
 
-.submitBtn{
-  background-color: #4176D7;
+.totalcost {
+  margin-top: 85px;
+}
+.submitBtn,
+.cancelBtn {
+  background-color: #4176d7;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -190,7 +193,12 @@ body{
   margin-top: 50px;
   width: 100px;
 }
-.total{
+.total {
   display: flex;
   flex-direction: row;
+}
+
+.cancelBtn {
+  margin-left: 10px;
+  margin-bottom: 20px;
 }
