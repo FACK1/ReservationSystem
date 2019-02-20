@@ -176,9 +176,6 @@ class DetailsEvent extends Component {
 
                 <h2 className="h22">Total Cost: {totalcost}</h2>
 
-
-                {statusBoolean && <input type="submit" value="Close" />}
-
                 {statusBoolean && (
                   <div className="button">
                     <input type="submit" value="Close" className="Approve" />
