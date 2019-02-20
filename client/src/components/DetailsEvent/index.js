@@ -57,7 +57,6 @@ class DetailsEvent extends Component {
   };
 
   render() {
-    console.log("state", this.state);
     if (this.state.loading === true) {
       const {
         title = "event-title",
@@ -172,16 +171,12 @@ class DetailsEvent extends Component {
                   <label className="title">Description:</label>
                   <div className="discrp">{equipment_note}</div>
                 </div>
-
-
                 <h2 className="h22">Total Cost: {totalcost}</h2>
-
                 {statusBoolean && (
                   <div className="button">
                     <input type="submit" value="Close" className="Approve" />
                   </div>
                 )}
-
                 <div className="button">
                   {!statusBoolean && statusApprove && (
                     <input type="submit" value="Approve" className="Approve" />

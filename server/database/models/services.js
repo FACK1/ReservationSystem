@@ -1,36 +1,21 @@
 const Sequelize = require('sequelize');
 const sequelize = require('./sequelize.js');
 
-const Event = sequelize.define('events', {
-  title: {
+const Service = sequelize.define('services', {
+  name: {
     type: Sequelize.STRING,
     allowNull: false,
   },
-  start_date: {
-    type: Sequelize.DATE,
-    allowNull: false,
-  },
-  end_date: {
-    type: Sequelize.DATE,
-    allowNull: false,
-  },
-  org_name: {
+  image: {
     type: Sequelize.STRING,
     allowNull: false,
-  },
-  price: {
-    type: Sequelize.FLOAT,
   },
   capacity: {
     type: Sequelize.INTEGER,
     allowNull: false,
   },
-  note: {
-    type: Sequelize.TEXT,
-  },
-  status: {
-    type: Sequelize.INTEGER,
-    allowNull: false,
+  equipment: {
+    type: Sequelize.STRING,
   },
   createdAt: {
     type: Sequelize.DATE(),
@@ -40,5 +25,6 @@ const Event = sequelize.define('events', {
     type: Sequelize.DATE(),
     defaultValue: sequelize.literal('NOW()'),
   },
-});
-module.exports = Event;
+
+}, { freezeTableName: true });
+module.exports = Service;
