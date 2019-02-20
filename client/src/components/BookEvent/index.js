@@ -199,7 +199,6 @@ class BookEvent extends React.Component {
                     onChange={this.handleChange}
                   />
                   <div className="total">
-                    <h2 className="totalcost">Total Cost:</h2>
                     <input className="submitBtn" type="submit" value="Submit" />
                   </div>
                 </div>
