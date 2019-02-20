@@ -7,6 +7,7 @@ const { approveEvent } = require('./controllers/approveEvent.js');
 const { getEvent } = require('./controllers/getEvent.js');
 const { checkAuth } = require('./controllers/checkAuth.js');
 const { auth } = require('./middlewares/auth.js');
+const { getService } = require('./controllers/getService.js');
 
 const router = express.Router();
 
@@ -17,4 +18,5 @@ router.get('/logout', logout);
 router.post('/event', auth, postEvent);
 router.get('/event/:id', auth, getEvent);
 router.put('/event/:id', auth, approveEvent);
+router.get('/service', auth, getService);
 module.exports = router;
