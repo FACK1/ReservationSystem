@@ -3,8 +3,9 @@ const {
 } = require('../database/models');
 
 exports.postEvent = (req, res) => {
-  const { userId } = req;
   const { serviceId } = req.params;
+  const { userId } = req;
+
   const {
     title,
     start_date,
