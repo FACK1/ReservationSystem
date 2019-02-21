@@ -16,7 +16,7 @@ exports.auth = (req, res, next) => {
         req.userRole = role;
         return next();
       }
-      return res.json({ error: 'not auth' });
+      return res.json({ error: 'not Authorized' });
     });
   }
 };

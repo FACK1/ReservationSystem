@@ -31,6 +31,7 @@ exports.postEvent = (req, res) => {
     org_name,
     serviceId,
     price,
+    serviceId,
     capacity,
     note,
     status: 0,
