@@ -4,6 +4,7 @@ const {
 
 exports.postEvent = (req, res) => {
   const { userId } = req;
+  const { serviceId } = req.params;
   const {
     title,
     start_date,
@@ -20,6 +21,7 @@ exports.postEvent = (req, res) => {
     lunch_time,
     equipment_price,
     equipment_note,
+
   } = req.body;
 
   Event.create({
@@ -28,6 +30,7 @@ exports.postEvent = (req, res) => {
     end_date,
     org_name,
     price,
+    serviceId,
     capacity,
     note,
     status: 0,

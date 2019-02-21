@@ -15,7 +15,7 @@ router.get('/events/:id', auth, getEvents);
 router.get('/checkauth', auth, checkAuth);
 router.post('/login', login);
 router.get('/logout', logout);
-router.post('/event', auth, postEvent);
+router.post('/event/:serviceId', auth, postEvent);
 router.get('/event/:id', auth, getEvent);
 router.put('/event/:id', auth, approveEvent);
 router.get('/service', auth, getService);
