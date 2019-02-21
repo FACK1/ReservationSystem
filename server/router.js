@@ -11,7 +11,7 @@ const { getService } = require('./controllers/getService.js');
 
 const router = express.Router();
 
-router.get('/events', auth, getEvents);
+router.get('/events/:id', auth, getEvents);
 router.get('/checkauth', auth, checkAuth);
 router.post('/login', login);
 router.get('/logout', logout);

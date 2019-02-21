@@ -1,7 +1,7 @@
 const { Service } = require('../database/models');
 
 exports.getService = (req, res) => {
-  Service.findAll({ attributes: ['id', 'name', 'image'] })
+  Service.findAll()
     .then((data) => {
       if (!data) return res.status(401).json({ massage: 'no services' });
       return res.json(data);
