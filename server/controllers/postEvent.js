@@ -4,6 +4,7 @@ const {
 
 exports.postEvent = (req, res) => {
   const { userId } = req;
+  const { serviceId } = req.params;
   const {
     title,
     start_date,
@@ -27,6 +28,7 @@ exports.postEvent = (req, res) => {
     start_date,
     end_date,
     org_name,
+    serviceId,
     price,
     capacity,
     note,
