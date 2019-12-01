@@ -44,10 +44,7 @@ class HomePage extends Component {
             <Header />
             <div className="tab-container">
               <div className="buttons-container">
-                <input type="button" value="Halls" className="hallsBtn" />
-                <input type="button" value="Stage" className="stageBtn" />
-                <input type="button" value="Yards" className="stageBtn" />
-                <input type="button" value="Hostels" className="stageBtn" />
+                <input type="button" value="Stage" className="hallsBtn" />
               </div>
               <div className="tab-line" />
             </div>
