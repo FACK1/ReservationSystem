@@ -1,8 +1,13 @@
 insert into users (username, password, role) values ('Admin','$2a$10$D/IX/AtYw5YHT4YWI2B2aOg5ZGMBodHNDx2x6vIbHWomyH4fsJ9SG','admin');
-insert into users (username, password, role) values ('ydrc','$2a$10$D/IX/AtYw5YHT4YWI2B2aOg5ZGMBodHNDx2x6vIbHWomyH4fsJ9SG','user');
+insert into users (username, password, role) values ('User','$2a$10$D/IX/AtYw5YHT4YWI2B2aOg5ZGMBodHNDx2x6vIbHWomyH4fsJ9SG','user');
+
+
+insert into services (name,image,capacity,equipment) values ('Stage','http://goingsolo.in/wp-content/uploads/2014/07/theatre.jpg',120,'Datashow');
+insert into services (name,image,capacity,equipment) values ('Co-working space 2',"https://files.gitter.im/YDRC-Rooms-Reservation/community/rVSp/Rectangle-2.5.png",40,"Mic, Datashow");
+
 
 insert into events (title,start_date,end_date,org_name,price,capacity,note,"userId","serviceId",status)
-  values ('Interview',DATE 'Thu, 14 February 2019 13:30:00', DATE 'Thu, 14 February 2019 13:30:00','YDRC',120,10,'The event is for the interview',1,1,1);
+  values ('Interview',DATE 'Thu, 14 February 2019 13:30:00', DATE 'Thu, 14 February 2019 13:30:00','PTUK',120,10,'The event is for the interview',1,1,1);
   insert into lunches (note,price,time,"eventId")
     values ('Makloba',30,'12:15',1);
   insert into coffees (note,price,time,"eventId")
@@ -18,7 +23,3 @@ insert into events (title,start_date,end_date,org_name,price,capacity,note,"user
     values ('3 Coffee without suger! and 2 with suger',5,'11:00',2);
   insert into equipment (note,price,"eventId")
     values ('Datashow',20,2);
-
-
-insert into services (name,image,capacity,equipment) values ('Co-working space 1',"https://files.gitter.im/YDRC-Rooms-Reservation/community/rVSp/Rectangle-2.5.png",30,"Datashow");
-insert into services (name,image,capacity,equipment) values ('Co-working space 2',"https://files.gitter.im/YDRC-Rooms-Reservation/community/rVSp/Rectangle-2.5.png",40,"Mic, Datashow");
